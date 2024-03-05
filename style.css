@@ -798,10 +798,12 @@ h2 {
     
     
     .card{
+        
         width: 30rem;
         height: 35rem;
         text-align: center;
         margin: 2rem 2rem;
+
     }
     
     }

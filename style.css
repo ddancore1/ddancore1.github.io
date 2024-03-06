@@ -321,6 +321,25 @@ h2 {
     }
 }
 
+@media only screen and (min-width: 769px) {
+    
+    .subir:hover {
+      opacity: 1;
+      animation: bounce 1.2s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite;
+    }
+  
+    @keyframes bounce {
+      0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+      }
+      40% {
+        transform: translateY(-15px);
+      }
+      60% {
+        transform: translateY(-7.5px);
+      }
+    }
+  }
 /* Banner */
 
 .banner {

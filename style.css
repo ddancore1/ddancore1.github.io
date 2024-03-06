@@ -313,7 +313,7 @@ h2 {
 
 .subir:active {
     background-color: #282D2C;
-    transform: scale(1);
+    transform: scale(0);
 }
 
 .subir i:hover{
@@ -613,7 +613,7 @@ h2 {
 }
 
 .oferta:active {
-    transform: scale(1);
+    transform: scale(0);
 }
 
 

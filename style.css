@@ -310,12 +310,6 @@ h2 {
     transform: scale(1.1);
 }
 
-
-.subir:active {
-    background-color: #282D2C;
-    transform: scale(0);
-}
-
 .subir i:hover{
     color: #fff;
 }
@@ -611,11 +605,6 @@ h2 {
     background-color: #405c44;
     transform: scale(1.1);
 }
-
-.oferta:active {
-    transform: scale(0);
-}
-
 
 .logan-1{
     flex-basis: 40%;

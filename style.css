@@ -737,7 +737,7 @@ h2 {
 }
 
 .card-img{
-    margin-top: 20px;
+    margin-top: 0;
     display: flex;
     justify-content: center;
 }
@@ -752,6 +752,8 @@ h2 {
 
 .card-desc{
     font-size: small;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
     color: #877d6f;
 }
 
@@ -775,7 +777,7 @@ h2 {
     background-color: #fff;
     display: flex;
     justify-content: center;
-    margin-bottom: 3rem; 
+    margin-bottom: 4rem; 
 }
 
 .card{

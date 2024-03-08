@@ -307,7 +307,6 @@ h2 {
 
 .subir:hover{
     background-color: #2f4232;
-    transform: scale(1.1);
 }
 
 .subir i:hover{
@@ -318,6 +317,9 @@ h2 {
     .subir{
         bottom: 9rem;
         right: 1rem;
+    }
+    .subir:hover{
+        transform: scale(1.1);
     }
 }
 
@@ -471,7 +473,7 @@ h2 {
         padding: 16px 37px;
         display: flex;
         justify-content: left;
-        width: 17rem;
+        width: 16rem;
         margin-top: 3rem;
         margin-left: 3rem;
         text-align: center;
@@ -510,6 +512,13 @@ h2 {
 
     .informacion a {
         padding: 12px 25px; 
+    }
+
+
+}
+@media only screen and (min-width: 769px){
+    .informacion a:hover{
+        transform: scale(1.1);
     }
 }
 
@@ -622,7 +631,6 @@ h2 {
 
 .oferta:hover{
     background-color: #405c44;
-    transform: scale(1.1);
 }
 
 .logan-1{
@@ -734,6 +742,12 @@ h2 {
 
     .logan-2{
         order: 1;
+    }
+}
+
+@media only screen and (min-width: 769px){
+    .oferta:hover{
+        transform: scale(1.1);
     }
 }
 

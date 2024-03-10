@@ -108,6 +108,10 @@ html::-webkit-scrollbar-thumb{
     margin-bottom: 1rem;
 }
 
+.logo img:hover{
+    transform: scale(1.1);
+}
+
 #search-btn{
     display: none;
 }
@@ -175,48 +179,63 @@ h2 {
 
 @media only screen and (max-width: 768px){
    
-    html{
-        scroll-padding-top: 0;
+
+   
+    
+    .header .header-1 {
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between; 
     }
 
-    body{
-        padding-bottom: 6rem;
+    .header .header-1 .search-form {
+        position: absolute;
+        top: -115%;
+        right: 2rem;
+        width: 90%;
     }
-
-    header{
-
-        width: 100%;
+    
+    .logo img:hover{
+        transform: scale(1);
         
     }
-
-    .header-1 {
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); 
-    }
-
-    .header .header-2{
+    .header .header-2 {
         display: none;
     }
-
-    .bottom-navbar{
+    
+    .bottom-navbar {
         display: block;
         box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.5);
     }
-
-    #search-btn{
-        display:inline-block;
+    
+    #search-btn {
+        display: flex;
+        font-size: 2.5rem;
+        margin-left: 1.5rem;
+        cursor: pointer;
+        padding-top: 10px;
     }
-
-    .header .header-2{
-        position: relative;
+    
+    #search-btn:hover{
+        color: #507255;
+        transform: scale(1.1); 
     }
+    
 
-    .header .header-1 .search-form{
-        position: absolute;
-        top: -115%; right: 2rem;
-        width: 90%;
+    #login-btn {
+        margin-left: auto;
+        margin-right: 1.5rem;
+        padding-top: 10px;
+    }
+    
+    .icons a {
+        display: none;
     }
 
    
+    
+
 
 }
 
@@ -1098,7 +1117,177 @@ h2 {
 }
 
 
+/* Productos seccion */
 
+
+.banner2 {
+  width: 100%;
+  height: 30px; 
+  background-color: #0D0F10;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  border-top: 2px solid #282D2C;
+  
+}
+
+.banner2:hover{
+     height: 35px;
+    background-color: #405c44;
+    border-top: 2px solid #405c44;
+}
+
+.banner-content {
+  text-align: center;
+}
+
+.banner2 p {
+  margin: 0;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+/* ... */
+
+.productos-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.contenido-shop {
+    width: 100%;
+    height: 500px;
+    display: flex;
+}
+
+
+.product-card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    transition: transform 0.3s;
+    overflow: hidden;
+    border-radius: 5px;
+    margin-bottom: 2rem; 
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.product-card img {
+    padding-top: 2rem;
+}
+
+.product-info {
+    padding: 20px;
+}
+
+.product-info h3 {
+    margin: 0 0 10px;
+    font-size: 1.5em;
+}
+
+.product-info p {
+    margin: 0 0 15px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.product-info .price {
+    font-weight: bold;
+    color: #282D2C;
+    font-size: 1.5em;
+}
+
+.add-to-cart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.add-to-cart button {
+    background-color: #9f2a00;
+    color: #fff;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.add-to-cart button:hover {
+    background-color: #7e2201;
+}
+
+.add-to-cart i {
+    margin-left: 10px;
+    font-size: 1.2em;
+}
+
+.add-to-cart i:hover{
+    color: #507255;
+}
+
+
+
+
+aside {
+    width: 250px;
+    height: 1000px;
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-left: 2rem;
+}
+
+aside h2 {
+    color: #333;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+    text-align: left;
+}
+
+aside ul {
+    list-style: none;
+    padding: 0;
+    flex-grow: 1;
+}
+
+aside ul li {
+    margin-bottom: 5px;
+    text-align: left;
+    
+}
+
+
+.price-range {
+    margin-top: 15px;
+}
+
+.price-range label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+    margin-top: 2rem;
+}
+
+.price-range input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.categories {
+    margin-top: 15px;
+}
+
+.categories ul {
+    padding-left: 15px;
+}
 
 
 

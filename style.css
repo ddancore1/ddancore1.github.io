@@ -155,13 +155,13 @@ h2 {
 .bottom-navbar a{
     font-size: 2.5rem;
     padding: 2rem;
-    color: #fff;
+    color: #D4C8B9;
     transition: color 0.3s ease;
 }
 
 
 .bottom-navbar a:hover{
-    color: #D4C8B9;
+    color: #fff;
     transform: scale(1.1); 
 }
 
@@ -178,9 +178,7 @@ h2 {
 }
 
 @media only screen and (max-width: 768px){
-   
 
-   
     
     .header .header-1 {
         height: 80px;
@@ -207,9 +205,24 @@ h2 {
     .bottom-navbar {
         display: block;
         box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.5);
+        
     }
     
-    #search-btn {
+    #boton-home{   
+     background-color: #fff;
+     border-radius: 100%;
+     color: #0D0F10;
+     transform: translateY(-10px);
+     margin-bottom: 1rem
+    }
+
+    #boton-home:hover{
+        background-color: #0D0F10;
+        color: #fff;
+    }
+        
+
+    #search-btn{
         display: flex;
         font-size: 2.5rem;
         margin-left: 1.5rem;
@@ -233,9 +246,32 @@ h2 {
         display: none;
     }
 
-   
+   /* botones selection */
     
+   #boton-about{
+    transform: scale(1.1);
+    color: #fff;
+    cursor: default;
+   }
 
+   #boton-news{
+    transform: scale(1.1);
+    color: #fff;
+    cursor: default;
+   }
+
+   
+   #boton-shop{
+    transform: scale(1.1);
+    color: #fff;
+    cursor: default;
+   }
+
+   #boton-contact{
+    transform: scale(1.1);
+    color: #fff;
+    cursor: default;
+   }
 
 }
 

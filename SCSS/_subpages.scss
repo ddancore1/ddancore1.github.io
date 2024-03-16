@@ -1,0 +1,113 @@
+/* Generos */
+
+.generos-section {
+    text-align: center;
+    padding: 40px;
+
+    h2 {
+        color: #0D0F10;
+        font-size: 30px;
+    }
+
+    .categorias {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+        margin-top: 20px;
+
+        .categoria {
+            position: relative;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            cursor: pointer;
+            transition: transform 0.3s;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+
+            &:hover {
+                transform: scale(1.05);
+            }
+
+            img {
+                width: 100%;
+                filter: grayscale(100%);
+                transition: filter 0.3s;
+
+                &:hover {
+                    filter: grayscale(0%);
+                }
+            }
+
+            h3 {
+                margin-top: 10px;
+                font-size: 2rem;
+                color: #0D0F10;
+                display: flex;
+                justify-content: center;
+            }
+
+            p {
+                color: #666;
+                font-size: 1.5rem;
+                display: flex;
+                justify-content: center;
+                margin-bottom: 1rem;
+                margin-left: 1rem;
+                margin-right: 1rem;
+            }
+        }
+    }
+}
+
+
+/* Autores */
+
+.autores-section {
+    text-align: center;
+    padding: 40px;
+
+    h2 {
+        color: #0D0F10;
+        font-size: 30px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    
+}
+
+.autores-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+
+    
+}
+
+.autor-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    width: calc(33.33% - 20px); 
+    cursor: pointer;
+    transition: transform 0.3s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+
+    &:hover {
+        transform: scale(1.05);
+    }
+
+    img {
+        width: 100%;
+        border-radius: 6px;
+    }
+
+    h3 {
+        margin-top: 10px;
+        color: #333;
+    }
+
+    p {
+        color: #666;
+    }
+}

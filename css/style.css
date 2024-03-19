@@ -734,7 +734,7 @@ aside .categories ul {
   justify-content: center;
 }
 
-.contact-section {
+.contacto-section {
   display: flex;
   background-color: #0D0F10;
   color: white;
@@ -748,7 +748,7 @@ aside .categories ul {
   display: flex;
 }
 
-.contact-icons {
+.contacto-icons {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -756,10 +756,13 @@ aside .categories ul {
   padding: 20px;
   font-size: 18px;
 }
-.contact-icons a:hover {
+.contacto-icons a {
+  padding: 1.5rem;
+}
+.contacto-icons a:hover {
   color: #736c49;
 }
-.contact-icons p {
+.contacto-icons p {
   padding: 1rem;
 }
 
@@ -772,8 +775,7 @@ aside .categories ul {
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
-
-h2 {
+.container-form h2 {
   text-align: center;
   margin-bottom: 30px;
 }
@@ -781,22 +783,20 @@ h2 {
 .form-group {
   margin-bottom: 20px;
 }
-
-label {
+.form-group label {
   display: block;
   font-weight: bold;
 }
-
-input[type=text],
-input[type=email],
-textarea {
+.form-group input[type=text],
+.form-group input[type=email],
+.form-group textarea {
   width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
 }
 
-button {
+.boton-form {
   width: 100%;
   padding: 10px;
   border: none;
@@ -807,7 +807,7 @@ button {
   transition: background-color 0.3s;
 }
 
-button:hover {
+.boton-form:hover {
   background-color: #6a4128;
 }
 
@@ -1239,11 +1239,11 @@ button:hover {
   }
 }
 @media (max-width: 768px) {
-  .contact-section {
+  .contacto-section {
     flex-direction: column;
   }
   iframe,
-  .contact-icons {
+  .contacto-icons {
     display: flex;
     align-items: center;
     justify-content: center;

@@ -2,6 +2,7 @@
 // Contacto
 
 .contacto-section {
+    border-top: 2px solid #282D2C;
     display: flex;
     background-color: #0D0F10;
     color: white;
@@ -13,7 +14,6 @@
     flex: 1;
     padding: 20px;
     display: flex;
-    
 }
 
 .contacto-icons {
@@ -25,13 +25,13 @@
     font-size: 18px;
 
     a{
-        padding: 1.5rem;
+     padding: 1.5rem;
     }
     a:hover{
      color: #736c49;
     }
     p{
-        padding: 1rem;
+      padding: 1rem;
     }
     
 }
@@ -84,8 +84,11 @@
      color: #fff;
      cursor: pointer;
      transition: background-color 0.3s;
-    }
 
-  .boton-form:hover {
-     background-color: #6a4128;
-    }
+     &:hover {
+       background-color: #6a4128;
+      }
+
+}
+
+  

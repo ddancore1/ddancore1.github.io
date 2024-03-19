@@ -106,10 +106,6 @@ html::-webkit-scrollbar-thumb {
   margin-bottom: 1rem;
 }
 
-.logo img:hover {
-  transform: scale(1.1);
-}
-
 #search-btn {
   display: none;
 }
@@ -305,7 +301,7 @@ h2 {
   display: grid;
   justify-content: left;
   align-items: center;
-  background-image: url(../img/bosque-otoñal.png);
+  background-image: url(../img/bosque-otoñal.webp);
   background-size: cover;
   background-attachment: fixed;
 }
@@ -446,7 +442,7 @@ h2 {
 
 .logan-1 {
   flex-basis: 40%;
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/books.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/books.webp);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -470,7 +466,7 @@ h2 {
 
 .logan-2 {
   flex-basis: 40%;
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/jane-austenn.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/jane-austen.webp);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -697,7 +693,7 @@ aside .categories ul {
   display: grid;
   justify-content: center;
   align-items: center;
-  background-image: url(../img/joven-mujer-libro.jpg);
+  background-image: url(../img/joven-mujer-libro.webp);
   background-size: cover;
   background-attachment: fixed;
 }
@@ -735,6 +731,7 @@ aside .categories ul {
 }
 
 .contacto-section {
+  border-top: 2px solid #282D2C;
   display: flex;
   background-color: #0D0F10;
   color: white;
@@ -806,7 +803,6 @@ aside .categories ul {
   cursor: pointer;
   transition: background-color 0.3s;
 }
-
 .boton-form:hover {
   background-color: #6a4128;
 }
@@ -926,9 +922,6 @@ aside .categories ul {
     top: -115%;
     right: 2rem;
     width: 90%;
-  }
-  .logo img:hover {
-    transform: none;
   }
   .header .header-2 {
     display: none;

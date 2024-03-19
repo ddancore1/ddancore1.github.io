@@ -484,6 +484,20 @@
 
 
 
+// Contacto Map 
+
+@media (max-width: 768px) {
+    .contact-section {
+        flex-direction: column; 
+    }
+    iframe,
+    .contact-icons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%; 
+    }
+}
 
 
 // SUB PAGES:

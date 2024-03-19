@@ -576,6 +576,7 @@ h2 {
   border-radius: 8px;
   padding: 20px;
   margin: 10px;
+  margin-bottom: 15px;
   width: calc(33.33% - 20px);
   cursor: pointer;
   transition: transform 0.3s;
@@ -601,7 +602,7 @@ h2 {
   justify-content: center;
 }
 .add-to-cart button {
-  background-color: #9f2a00;
+  background-color: #5d2510;
   color: #fff;
   padding: 7px 8px;
   border: none;
@@ -625,7 +626,7 @@ h2 {
 aside {
   width: 30%;
   background-color: #f5f5f5;
-  padding: 20px;
+  padding: 30px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin-right: 20px;
 }
@@ -731,6 +732,83 @@ aside .categories ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.contact-section {
+  display: flex;
+  background-color: #0D0F10;
+  color: white;
+  justify-content: center;
+  padding: 3rem;
+}
+
+.map-container {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+}
+
+.contact-icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  font-size: 18px;
+}
+.contact-icons a:hover {
+  color: #736c49;
+}
+.contact-icons p {
+  padding: 1rem;
+}
+
+.container-form {
+  width: 80%;
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+input[type=text],
+input[type=email],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #251105;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #6a4128;
 }
 
 /* Generos */
@@ -1158,6 +1236,18 @@ aside .categories ul {
   }
   .cuadro-dos {
     padding: 130px;
+  }
+}
+@media (max-width: 768px) {
+  .contact-section {
+    flex-direction: column;
+  }
+  iframe,
+  .contact-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
   }
 }
 @media screen and (max-width: 768px) {

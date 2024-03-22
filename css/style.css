@@ -40,16 +40,6 @@ html::-webkit-scrollbar-thumb {
   justify-content: space-between;
 }
 
-.header .header-1 .logo {
-  font-size: 2.5rem;
-  font-weight: bolder;
-  color: #0D0F10;
-}
-
-.header .header-1 .logo i {
-  color: #0D0F10;
-}
-
 .header .header-1 .search-form {
   width: 50rem;
   height: 5rem;
@@ -174,8 +164,8 @@ h2 {
   display: inline-block;
   margin-top: 15px;
   padding: 10px 40px;
-  border: 2px solid #D4C8B9;
-  color: #D4C8B9;
+  border: 2px solid #c7bbad;
+  color: #fff6eb;
   text-decoration: none;
   background: #0D0F10;
   font-size: medium;
@@ -431,18 +421,17 @@ h2 {
 
 .oferta {
   border-radius: 50px;
-  background-color: rgba(80, 114, 85, 0.7);
+  background-color: rgba(60, 88, 64, 0.8);
   margin-bottom: 15px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
 }
-
 .oferta:hover {
   background-color: #405c44;
 }
 
 .logan-1 {
   flex-basis: 40%;
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/books.webp);
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url(../img/books.webp);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -466,7 +455,7 @@ h2 {
 
 .logan-2 {
   flex-basis: 40%;
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/jane-austen.webp);
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/jane-austen.webp);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -540,7 +529,6 @@ h2 {
   border-top: 2px solid #282D2C;
 }
 .banner2:hover {
-  height: 35px;
   background-color: #405c44;
   border-top: 2px solid #405c44;
 }
@@ -662,6 +650,48 @@ aside .categories ul {
   padding-left: 15px;
 }
 
+.aesthetic-section {
+  display: grid;
+  margin: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Columnas responsivas */
+  grid-auto-rows: minmax(200px, auto); /* Altura de las filas */
+  grid-gap: 20px; /* Espacio entre los elementos */
+}
+
+.aesthetic-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  font-size: 2rem;
+  color: #333;
+}
+
+.item-1 {
+  background-color: #a3b18a;
+}
+
+.item-2 {
+  background-color: #7e9971;
+}
+
+.item-3 {
+  background-color: #5c7a59;
+}
+
+.item-4 {
+  background-color: #3a5a40;
+}
+
+.item-5 {
+  background-color: #375441;
+}
+
+.item-6 {
+  background-color: #344e41;
+}
+
 /* Estilos para Nosotros */
 .nosotros1 {
   height: 29px;
@@ -685,6 +715,11 @@ aside .categories ul {
 }
 
 /* Estilos para Banner-Nosotros */
+.textomision {
+  display: flex;
+  justify-content: center;
+}
+
 .banner1 {
   width: 100%;
   height: 40rem;
@@ -708,7 +743,7 @@ aside .categories ul {
 
 .moreinfo {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   background-color: #0D0F10;
   padding: 20px;

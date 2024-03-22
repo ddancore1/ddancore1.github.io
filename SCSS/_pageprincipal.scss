@@ -47,6 +47,7 @@
         font-size: medium;
         line-height: 2;
         margin-bottom: 30px;
+        
     }
 
     a {
@@ -150,20 +151,26 @@
 
 .oferta{
     border-radius: 50px;
-    background-color: rgba(80, 114, 85,0.7);
+    background-color: rgba(60, 88, 64, 0.8);
     margin-bottom: 15px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+    
+   
+    &:hover{
+     background-color: #405c44;
+    }
+
+  
+
 }
 
-.oferta:hover{
-    background-color: #405c44;
-}
+
 
 .logan-1{
 
     flex-basis: 40%;
     background: linear-gradient(
-        rgba(0,0,0,0.2),
+        rgba(0,0,0,0.6),
         rgba(0,0,0,0.2)
     ),
     url(../img/books.webp);
@@ -187,6 +194,7 @@
       color: #fff;
       margin-bottom: 10px;
       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      
     }
 
 }
@@ -196,8 +204,8 @@
 
     flex-basis: 40%;
     background: linear-gradient(
-        rgba(0,0,0,0.2),
-        rgba(0,0,0,0.2)
+        rgba(0,0,0,0.3),
+        rgba(0,0,0,0.3)
     ),
     url(../img/jane-austen.webp);
     background-position: center center;
@@ -220,6 +228,7 @@
       color: #fff;
       margin-bottom: 10px;
       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      
     } 
 
 }

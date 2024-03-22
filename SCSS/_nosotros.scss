@@ -28,6 +28,11 @@
 
 /* Estilos para Banner-Nosotros */
 
+.textomision{
+    display: flex;
+    justify-content: center;
+}
+
 .banner1 {
     width: 100%;
     height: 40rem;
@@ -52,7 +57,7 @@
 
 .moreinfo {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     background-color: #0D0F10;
     padding: 20px;

@@ -1,0 +1,41 @@
+.aesthetic-section {
+    display: grid;
+    margin: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Columnas responsivas */
+    grid-auto-rows: minmax(200px, auto); /* Altura de las filas */
+    grid-gap: 20px; /* Espacio entre los elementos */
+  }
+  
+  .aesthetic-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .item-1 {
+    background-color: #a3b18a;
+  }
+  
+  .item-2 {
+    background-color: #7e9971;
+  }
+  
+  .item-3 {
+    background-color: #5c7a59;
+  }
+  
+  .item-4 {
+    background-color: #3a5a40;
+  }
+  
+  .item-5 {
+    background-color: #375441;
+  }
+  
+  .item-6 {
+    background-color: #344e41;
+  }

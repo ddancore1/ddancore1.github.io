@@ -38,7 +38,7 @@
             <div class="icons">
                 <a href="#" class="fas fas fa-shopping-cart"></a>
                 <a href="#" class="fas fas far fas far fa-heart"></a>
-                <div id="login-btn" class="fas far fa-user"></div>
+                <div class="fas far fa-user about"  id="openPopup"></div>
             </div>
     
     
@@ -73,7 +73,27 @@
         <div class="aesthetic-item item-4">4</div>
         <div class="aesthetic-item item-5">5</div>
         <div class="aesthetic-item item-6">6</div>
-      </div>
+    </div>
+
+
+  <!-- Ventana emergente oculta -->
+  <div id="popup" class="popup">
+    <div class="popup-content">
+        <span class="close" onclick="cerrarPopup()">&times;</span>
+        <form class="register" action="#" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required><br><br>
+    
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required><br><br>
+    
+            <label for="contrasena">Contraseña:</label>
+            <input type="password" id="contrasena" name="contrasena" required><br><br>
+    
+            <input type="submit" value="Registrarse">
+        </form>
+    </div>
+</div>
 
     <a href="#" class="subir">
         <i class="fa-solid fa-chevron-up"></i>
@@ -115,6 +135,6 @@
       
   
       
-
+<script src="../js/script.js"></script>
 </body>
 </html>

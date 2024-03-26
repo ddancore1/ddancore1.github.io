@@ -16,6 +16,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Serif+Display&display=swap" rel="stylesheet">
   <!-- custom css  -->
   <link rel="stylesheet" href="../css/style.css">
+  
 
 
 </head>
@@ -38,9 +39,10 @@
             <div class="icons">
                 <a href="#" class="fas fas fa-shopping-cart"></a>
                 <a href="#" class="fas fas far fas far fa-heart"></a>
-                <div id="login-btn" class="fas far fa-user"></div>
+                <div class="fas far fa-user about"  id="openPopup"></div>
             </div>
     
+            
     
         </div>
         
@@ -77,30 +79,47 @@
         </div>
     </section>
    
-    <section class="division"></section>
 
     <section class="general">
         
         <div class="general-1">
-            <h2>lorem ipsum</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis nobis accusantium.</p>
-            <a href="#" class="boton-form about">informacion</a>
+            <h2>Biblioteca Virtual</h2>
+            <p>Estamos aquí para guiarte en tu búsqueda de la próxima obra maestra que capturará tu imaginación.</p>
+            <a href="./productos.html" class="boton-form about">Ver Catálogo</a>
         </div>
         <div class="general-2"></div>
 
     </section>
 
+
     <section class="general">
-        
         <div class="general-3"></div>
-
+    
         <div class="general-1">
-            <h2>lorem ipsum</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis nobis accusantium.</p>
-            <a href="#" class="boton-form about">informacion</a>
+            <h2>Sumate</h2>
+            <p>Nos enorgullece ser parte de esta comunidad, donde compartimos el placer por las páginas, únete a nosotros en este viaje</p>
+            <a class="boton-form about" id="openPopup ">30% de descuento</a>
         </div>
-
     </section>
+    
+    <!-- Ventana emergente oculta -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="cerrarPopup()">&times;</span>
+            <form class="register" action="#" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required><br><br>
+        
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required><br><br>
+        
+                <label for="contrasena">Contraseña:</label>
+                <input type="password" id="contrasena" name="contrasena" required><br><br>
+        
+                <input type="submit" value="Registrarse">
+            </form>
+        </div>
+    </div>
 
     <a href="#" class="subir">
         <i class="fa-solid fa-chevron-up"></i>
@@ -142,6 +161,6 @@
       
       
       
-
+  <script src="../js/script.js"></script>
 </body>
 </html>

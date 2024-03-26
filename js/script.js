@@ -29,3 +29,16 @@ document.getElementById('openPopup').addEventListener('click', function() {
 function cerrarPopup() {
     document.getElementById('popup').style.display = 'none';
 }
+
+
+// Boton
+
+function openPopup() {
+    var popup = document.getElementById("popup");
+    popup.style.display = "block"; // Mostrar la ventana emergente
+}
+
+function cerrarPopup() {
+    var popup = document.getElementById("popup");
+    popup.style.display = "none"; // Ocultar la ventana emergente
+}

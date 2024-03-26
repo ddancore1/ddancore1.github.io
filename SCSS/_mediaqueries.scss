@@ -31,9 +31,13 @@
         width: 90%;
     }
     .icons{
-        width: 3rem;
-        margin: 0;
+        width: 1rem;
+        margin: 1.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
+    
     .header .header-2 {
         display: none;
     }
@@ -56,8 +60,10 @@
     #search-btn{
         
         display: flex;
+        justify-content: center;
+        align-items: center;
         font-size: 2.5rem;
-        margin-left: 1.5rem;
+        margin-left: 0rem;
         cursor: pointer;
         padding-top: 10px;
 
@@ -71,11 +77,6 @@
     
     
 
-    #login-btn {
-        margin: auto;
-        padding-right: 3rem;
-        padding-top: 10px;
-    }
     
     .icons a {
         display: none;
@@ -454,8 +455,8 @@
    }
 
     .general-1, .general-2, .general-3 {
-        width: 100%; /* Cambia el ancho para que los elementos ocupen todo el ancho de la pantalla */
-        padding: 50px; /* Reduce el relleno para que se ajuste mejor en pantallas pequeñas */
+        width: 100%; 
+        padding: 50px; 
     }
     .general-3{
         order: 1;

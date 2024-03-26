@@ -215,6 +215,71 @@ h2 {
   color: #fff;
 }
 
+.popup {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popup-content {
+  width: 350px;
+  background-color: rgba(255, 255, 255, 0.8);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.close {
+  position: absolute;
+  top: 1px;
+  right: 10px;
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+.register {
+  max-width: 400px;
+  margin: 20px auto;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.register label {
+  display: block;
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+  color: #666;
+}
+.register input[type=text],
+.register input[type=email],
+.register input[type=password],
+.register input[type=submit] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+.register input[type=submit] {
+  background-color: #0D0F10;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.register input[type=submit]:hover {
+  background-color: #282D2C;
+}
+
 /* Footer */
 .pie-pagina {
   width: 100%;
@@ -786,70 +851,6 @@ aside .categories ul {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.9);
 }
 
-.popup {
-  display: none;
-  position: fixed;
-  z-index: 9999;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-.popup-content {
-  background-color: white;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 20px;
-  border-radius: 5px;
-}
-
-.close {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  font-size: 3rem;
-  cursor: pointer;
-}
-
-.register {
-  max-width: 400px;
-  margin: 20px auto;
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-.register label {
-  display: block;
-  font-size: 1.5rem;
-  margin-bottom: 5px;
-  color: #666;
-}
-.register input[type=text],
-.register input[type=email],
-.register input[type=password],
-.register input[type=submit] {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-sizing: border-box;
-}
-.register input[type=submit] {
-  background-color: #0D0F10;
-  color: white;
-  border: none;
-  cursor: pointer;
-}
-.register input[type=submit]:hover {
-  background-color: #282D2C;
-}
-
 .contacto-section {
   border-top: 2px solid #282D2C;
   display: flex;
@@ -1133,8 +1134,11 @@ aside .categories ul {
     width: 90%;
   }
   .icons {
-    width: 3rem;
-    margin: 0;
+    width: 1rem;
+    margin: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .header .header-2 {
     display: none;
@@ -1151,19 +1155,16 @@ aside .categories ul {
   }
   #search-btn {
     display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 2.5rem;
-    margin-left: 1.5rem;
+    margin-left: 0rem;
     cursor: pointer;
     padding-top: 10px;
   }
   #search-btn:hover {
     color: #507255;
     transform: scale(1.1);
-  }
-  #login-btn {
-    margin: auto;
-    padding-right: 3rem;
-    padding-top: 10px;
   }
   .icons a {
     display: none;
@@ -1421,8 +1422,8 @@ aside .categories ul {
     text-align: center;
   }
   .general-1, .general-2, .general-3 {
-    width: 100%; /* Cambia el ancho para que los elementos ocupen todo el ancho de la pantalla */
-    padding: 50px; /* Reduce el relleno para que se ajuste mejor en pantallas pequeñas */
+    width: 100%;
+    padding: 50px;
   }
   .general-3 {
     order: 1;

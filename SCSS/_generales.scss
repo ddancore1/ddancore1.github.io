@@ -44,7 +44,7 @@ html::-webkit-scrollbar-thumb{
 
 
 .header .header-1 .search-form{
-  width: 50rem;
+  width: 40rem;
   height: 5rem;
   border: #877d6f;
   overflow: hidden;
@@ -74,6 +74,10 @@ html::-webkit-scrollbar-thumb{
 .header .header-1 .search-form label:hover{
   color: #507255;
   transform: scale(1.1); 
+}
+
+.icons{
+  width: 16.8rem;
 }
 
 .header .header-1 .icons div,
@@ -173,7 +177,7 @@ h2 {
     margin-top: 15px;
     padding: 10px 40px;
     border: 2px solid #c7bbad;
-    color: #fff6eb;
+    color: #fff1df;
     text-decoration: none;
     background: #0D0F10;
     font-size: medium;

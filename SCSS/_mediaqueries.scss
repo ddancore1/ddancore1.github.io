@@ -30,14 +30,16 @@
         right: 2rem;
         width: 90%;
     }
-    
+    .icons{
+        width: 3rem;
+    }
     .header .header-2 {
         display: none;
     }
     
     .bottom-navbar {
         display: block;
-        box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.5);
+        box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.6);
         
     }
     
@@ -46,12 +48,6 @@
        border-radius: 100%;
        transform: translateY(-10px);
        color: #fff;
-
-        &:hover{
-         background-color: #fff;
-         color: #0D0F10;
-         transition: 0.5s;
-        }
 
     }
         
@@ -75,8 +71,8 @@
     
 
     #login-btn {
-        margin-left: auto;
-        margin-right: 1.5rem;
+        margin: auto;
+        padding-right: 3rem;
         padding-top: 10px;
     }
     
@@ -111,7 +107,7 @@
         right: 1rem;
     }
     .subir:hover{
-        transform: scale(1.1);
+        transform: none;
     }
 }
 
@@ -188,24 +184,17 @@
 
     .informacion h1{
         max-width: 100%;
-        margin-left: 3rem;
-        margin-right: 3rem;
-        margin-top: 3rem;
-        margin-bottom: 3rem; 
+        margin: 3rem; 
     }
 
     .informacion p{
         max-width: 100%;
-        margin-left: 3rem;
-        margin-right: 3rem;
-        margin-top: 3rem;
-        margin-bottom: 3rem; 
+        margin: 3rem;
     }
 
     .informacion a {
         padding: 10px 20px;
-        margin-top: 3rem;
-        margin-bottom: 3rem;
+        margin: 3rem;
     }
 
     .btn{
@@ -223,19 +212,15 @@
 
     .informacion h1 {
         font-size: 30px; 
-        margin-top: 3rem;
-        margin-bottom: 3rem;
+        margin: 3rem;
         text-align: left;
-        margin-left: 3rem;
+       
 
     }
 
     .informacion p {
         font-size: 18px; 
-        margin-bottom: 3rem;
-        margin-left: 3rem;
-        margin-right: 3rem;
-        margin-top: 3rem;
+        margin: 3rem;
         text-align: left;
     }
 
@@ -244,10 +229,9 @@
         display: flex;
         justify-content: left;
         width: 16rem;
-        margin-top: 3rem;
-        margin-left: 3rem;
+        margin: 3rem;
         text-align: center;
-        margin-bottom: 3rem;
+        
     }
     
     .informacion a:hover{
@@ -436,6 +420,12 @@
     .venta-card {
         width: calc(50% - 20px); 
     }
+    .tienda-cards{
+        padding: 2rem;
+    }
+    aside{
+        display: none;
+    }
 }
 
 
@@ -462,21 +452,16 @@
        text-align: center;
    }
 
-   .cuadro-uno,
-   .cuadro-dos {
-       width: 100%;
-       
-   }
-
-   .cuadro-uno{
-       padding: 150px;
-   }
-
-   .cuadro-dos{
-       padding: 130px;
-   }
-
+    .general-1, .general-2, .general-3 {
+        width: 100%; /* Cambia el ancho para que los elementos ocupen todo el ancho de la pantalla */
+        padding: 50px; /* Reduce el relleno para que se ajuste mejor en pantallas pequeñas */
+    }
+    .general-3{
+        order: 1;
+    }
+    
 }
+
 
 
 

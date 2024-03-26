@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>TheRaven.com</title>
+    <title>TheRaven - home</title>
     <meta name="description" content="Los mejores libros en un solo lugar, Editorial ©TheRaven pone a tu disposición best sellers de la literatura clasica y moderna al mejor precio. ">
     <meta name="keywords" content="Libros, Editorial, Venta, Books, Tienda de libros, E-Shop ">
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
@@ -13,11 +13,13 @@
     
     <!-- font awesome -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+     <!-- fonts -->
      <link rel="preconnect" href="https://fonts.googleapis.com">
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Serif+Display&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <!-- custom css  -->
      <link rel="stylesheet" href="./css/style.css">
+     <script defer src="js/carrusel.js" ></script>
      
 </head>
 <body>
@@ -30,7 +32,7 @@
     <div class="header-1">
         <div id="search-btn" class="fa-solid fa-bars"></div>
         <div class="logo">
-            <img src="./img/logo-principal.png" alt="logo grande" srcset="">
+            <img src="./img/logo-principal.png" alt="logo principal" srcset="">
         </div>
         
 
@@ -74,23 +76,36 @@
     <div class="banner">
         <div class="capa"></div>
         <div class="informacion">
+
+            <p>Somos más que una tienda en línea.</p>
+
             <h1>Descubre un Mundo de Historias</h1>
-            <p>Somos más que una tienda en línea; somos un destino para los amantes de la literatura, donde cada clic abre las puertas a un mundo de posibilidades y aventuras literarias.</p>
+            
             <a href="./pages/nosotros.html" class="btn">Saber más</a>
         </div>
     </div>
 </main>
 
+<!-- carrusel JavaScript -->
 
-<!-- carrusel ilustrativo -->
 
-    <h3 class="title2">Recién Agregados </h3>
-    <div class="carousel-container">
-        <div class="carousel-item"><img src="./img/cuervo-car.jpeg" alt="Image 1"></div>
-        <div class="carousel-item"><img src="./img/canterville-car.jpeg" alt="Image 2"></div>
-        <div class="carousel-item"><img src="./img/iliada-car.jpeg" alt="Image 3"></div>
-        <div class="carousel-item"><img src="./img/dorian-car.jpeg" alt="Image 4"></div>
+<section class="car">
+    
+    <div class="carrusel">
+    
+        <div class="fotos">
+           <img src="./img/cuervo-car.jpeg" alt="el cuervo">
+           <img src="./img/canterville-car.jpeg" alt="canterville">
+        </div>
+        <ul class="puntos">
+           <li class="punto activo"></li>
+           <li class="punto"></li>
+        </ul>
+
     </div>
+    
+</section>
+
 
 <!-- categorias y productos -->
 
@@ -102,7 +117,7 @@
 
         <div class="ofert-1">
             
-            <img src="./img/libro-op.png" alt="libro-1">
+            <img src="./img/libro-op.png" alt="fantasma de la opera">
 
             <div class="product-txt">
 
@@ -110,12 +125,14 @@
                 <p>Editorial Alma</p>
                 <p>$25.000</p>
                 <a href="#" class="btn oferta">Agregar</a>
+                
 
             </div>
+            
         </div>
 
         <div class="ofert-1">
-            <img src="./img/libro-or.png" alt="libro-2">
+            <img src="./img/libro-or.png" alt="orgullo y prejuicio">
             <div class="product-txt">
                 <h3 class="txt-1">Orgullo y Prejuicio</h3>
                 <p>Editorial Alma</p>
@@ -141,7 +158,7 @@
         </div>
 
         <div class="ofert-1">
-            <img src="./img/libro-dr.png" alt="libro-3">
+            <img src="./img/libro-dr.png" alt="Dracula">
             <div class="product-txt">
                 <h3 class="txt-1">Drácula</h3>
                 <p>Editorial Alma</p>
@@ -151,7 +168,7 @@
         </div>
 
         <div class="ofert-1">
-            <img src="./img/libro-rj.png" alt="libro-4">
+            <img src="./img/libro-rj.png" alt="Romeo y Julieta">
             <div class="product-txt">
                 <h3 class="txt-1">Romeo Y Julieta</h3>
                 <p>Editorial Alma</p>
@@ -170,7 +187,7 @@
 <section class="offers">
     <div class="card">
         <div class="card-img">
-            <img src="./img/logo-tarjeta.png" width="70px " height="55px" alt="logo-1">
+            <img src="./img/logo-tarjeta.png" width="70px " height="55px" alt="logo-tarjeta">
         </div>
         <h3 class="title-cards">Elegí cómo pagar</h3>
         <p class="card-desc">Podés pagar con tarjeta, débito, efectivo o hasta 12 cuotas sin tarjeta con TheRaven Crédito.</p>
@@ -178,7 +195,7 @@
     </div>
     <div class="card">
         <div class="card-img">
-            <img src="./img/logo-caja.png" width="70px " height="55px" alt="logo-2">
+            <img src="./img/logo-caja.png" width="70px " height="55px" alt="logo-caja">
         </div>
         <h3 class="title-cards">Envío gratis desde $3.000</h3>
         <p class="card-desc">Solo por estar registrado en TheRaven tenés envíos gratis en miles de productos.</p>
@@ -186,7 +203,7 @@
     </div>
     <div class="card">
         <div class="card-img">
-            <img src="./img/logo-escudo.png" width="50px " height="55px" alt="logo-3">
+            <img src="./img/logo-escudo.png" width="50px " height="55px" alt="logo-escudo">
         </div>
         <h3 class="title-cards">Seguridad, de principio a fin</h3>
         <p class="card-desc">¿No te gusta? ¡Devolvelo! no hay nada que no puedas hacer, porque estás siempre protegido.</p>

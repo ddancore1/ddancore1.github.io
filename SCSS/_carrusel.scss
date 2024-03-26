@@ -1,0 +1,60 @@
+@import 'mixins';
+
+.car{
+    margin: 3rem;
+    display: flex;
+    justify-content: center;
+
+  .carrusel{
+     width: 400px;
+     max-width: 120em;
+     padding: 2rem;
+     @include neo( 1 , 1em , 1em );
+     overflow: hidden;
+    
+
+      .fotos{
+         width: 200%;
+         display: flex;
+         flex-flow: row nowrap;
+         justify-content: space-between;
+         align-items: center;
+         @include neo( 1 , 1em , 1em );
+         padding:2em;
+      
+         transition: all .5s ease;
+         transform: translateX(0%);
+        }
+
+      img{
+         width: calc( 100% / 2  - 3em);
+         min-height: 10vh;
+         @include neo( 1 , 1em , 1em );
+        }
+    
+    }
+
+  .puntos{
+     width: 100%;
+     padding: .4em;
+     display: flex;
+     flex-flow: row nowrap;
+     justify-content: center;
+     align-items: center;
+     
+    
+      .punto{
+         width:  2em;
+         height: 2em;
+         margin: 1em 1em 0;
+         @include neo( 1 , 1em , .6em );
+        }  
+   
+      .activo{
+         background-color: rgba(60, 88, 64, 0.8);
+        }
+    }
+
+}
+
+    

@@ -111,3 +111,44 @@
         color: #666;
     }
 }
+
+
+
+
+// Not found seccion
+
+
+.container-not {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+    margin: 3rem;
+    padding: 2rem;
+  
+    i{
+      color: #2f4232;
+      font-size: 100px;
+      padding-bottom: 2rem;
+    }
+  
+  }
+  
+  
+  
+  .not-found-heading {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .not-found-message {
+    font-size: 18px;
+    color: #666;
+  }
+  
+  
+  
+  
+  

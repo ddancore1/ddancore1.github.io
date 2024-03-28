@@ -89,7 +89,7 @@ html::-webkit-scrollbar-thumb{
   margin-left: 1.5rem;
   color: #0D0F10;
   cursor: pointer;
-  
+  text-decoration: none;
 }
 
 .header .header-1 .icons div:hover{
@@ -112,6 +112,24 @@ html::-webkit-scrollbar-thumb{
   display: none;
 }
 
+.navbar-custom {
+ 
+  h2 {
+    text-align: center;
+    text-transform: uppercase;
+  }
+  a{
+    text-align: center;
+    color: #dad3bf;
+    display: inline-block;
+    padding: 1.2rem;
+    font-size: 1.7rem;
+    text-decoration: none;
+  }
+  a:hover{
+    background: #282D2C;
+  }
+}
 
 .header .header-2{
   background: #0D0F10;
@@ -153,6 +171,7 @@ h2 {
   padding: 2rem;
   color: #dad3bf;
   transition: color 0.3s ease;
+  text-decoration: none;
 }
 
 
@@ -209,8 +228,17 @@ h2 {
     }
 }
 
+// bootstrap
 
+.pagination {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
 
+.page-link {
+  font-size: 1.3rem;
+  padding: 10px 15px; 
+}
 
 
 // Ventana Registrate
@@ -293,43 +321,6 @@ h2 {
 
 
 
-// Not found seccion
-
-
-.container-not {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 300px;
-  margin: 3rem;
-  padding: 2rem;
-
-  i{
-    color: #2f4232;
-    font-size: 100px;
-    padding-bottom: 2rem;
-  }
-
-}
-
-
-
-.not-found-heading {
-  font-size: 36px;
-  color: #333;
-  margin-bottom: 20px;
-}
-
-.not-found-message {
-  font-size: 18px;
-  color: #666;
-}
-
-
-
-
-
 
 /* Footer */
 
@@ -371,11 +362,13 @@ h2 {
     font-size: 1.5rem;
     color: #0D0F10;
     margin-bottom: 10px;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .box div{
   font-size: 1.5rem;
-  color: #405c44;
+  color: #4e4940;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 

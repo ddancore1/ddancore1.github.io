@@ -30,6 +30,11 @@
         right: 2rem;
         width: 90%;
     }
+
+    .logo img{
+        margin-left: 1.5rem;
+    }
+
     .icons{
         width: 1rem;
         margin: 1.5rem;
@@ -142,6 +147,15 @@
     .pie-pagina .grupo-1 {
         grid-template-columns: 1fr; 
         grid-gap: 20px;
+        p{
+            margin-left: 4rem;
+            margin-right: 4rem;
+        }
+        .box div{
+            margin-left: 4rem;
+            margin-right: 4rem;
+            margin-top: 2rem;
+        }
     }
 
     .pie-pagina .grupo-1 .red-social {
@@ -157,7 +171,7 @@
         width: 4rem; 
         height: 4rem;
         line-height: 35px;
-        font-size: 1.5rem; 
+        font-size: 1.8rem; 
     }
   
 }

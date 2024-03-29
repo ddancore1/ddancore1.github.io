@@ -59,18 +59,14 @@
       width: 70%;
     }
   
-    h3 {
-      font-size: 1.5rem;
-      margin-top: 10px;
-      color: #333;
-    }
-  
-    p {
+    h3, p {
+      font-size: medium;
       margin-top: 1rem;
-      margin-bottom: 1rem;
-      font-size: 1.5rem;
-      color: #666;
-    }
+      max-width: 100%; 
+      overflow: hidden;
+      white-space: nowrap; 
+      text-overflow: ellipsis; 
+  }
 }
   
 .add-to-cart {
@@ -79,28 +75,22 @@
     justify-content: center;
   
     button {
-      background-color: #5d2510;
+      background-color: #251105;
+      text-align: center;
+      font-size: 1.5rem;
       color: #fff;
+      width: 60%;
       padding: 8px 9px;
       border: none;
       border-radius: 3px;
       cursor: pointer;
-      margin-top: 2rem;
+
   
       &:hover {
-        background-color: #7e2201;
+        background-color: #6a4128;
       }
     }
   
-    i {
-      margin-left: 10px;
-      font-size: 2rem;
-      margin-top: 20px;
-  
-      &:hover {
-        color: #507255;
-      }
-    }
 }
   
 /* Aside */
@@ -108,9 +98,11 @@
   aside {
     width: 50%;
     background-color: #f5f5f5;
+    border-radius: 10px;
     padding: 30px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-right: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    
   
     h2 {
       color: #333;
@@ -120,21 +112,41 @@
     }
   
     ul {
+      display: grid;
+      grid-column: 1;
+      justify-content: left;
+      text-align: left;
+      text-decoration: none;
       list-style: none;
       padding: 0;
-      flex-grow: 1;
+     
+      
+      
   
-      li {
+      a {
+        font-size: 1.4rem;
+        text-decoration: none;
         margin-bottom: 5px;
-        text-align: left;
+        color: #47210a;
+        
+        
+        &:hover{
+          color: #405c44;
+        }
+
       }
+
+      
+    
+
     }
   
     .price-range {
-      margin-top: 15px;
+      margin-top: 3rem;
   
       label {
         display: block;
+        margin-top: 5rem;
         margin-bottom: 5px;
         color: #333;
         margin-top: 2rem;
@@ -148,7 +160,7 @@
     }
   
     .categories {
-      margin-top: 15px;
+      margin-top: 3rem;
   
       ul {
         padding-left: 15px;

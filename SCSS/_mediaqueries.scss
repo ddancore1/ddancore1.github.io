@@ -463,23 +463,10 @@
 @media screen and (max-width: 768px) {
     .aesthetic-section {
         grid-template-columns: 1fr; 
-        i {
-         display: none;
-        }
+       
     }
     
-  
-    .over .overlay {
-        opacity: 1;
-        background-color: rgba(0, 0, 0, 0.8);
-        
-        a:hover{
-         transform: none;
-        }
 
-        
-        
-    }
 
     .item-1{
         order: 2;
@@ -494,8 +481,8 @@
     }
 
     
+    
 }
-
 
 // NOSOTROS:
 

@@ -186,6 +186,7 @@ h2 {
 }
 
 .subir {
+  z-index: 1;
   height: 40px;
   width: 40px;
   background-color: #282D2C;
@@ -799,7 +800,7 @@ aside .categories ul {
 .item-2 {
   grid-column: span 2;
   background-image: url("../img/articulo-tendencias.jpeg");
-  background-size: 80% auto;
+  background-size: cover;
   background-position: top;
 }
 
@@ -1051,7 +1052,7 @@ aside .categories ul {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
-  margin-top: 20px;
+  margin: 2rem;
 }
 .generos-section .categorias .categoria {
   position: relative;
@@ -1105,7 +1106,7 @@ aside .categories ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin-top: 20px;
+  margin: 2rem;
 }
 
 .autor-card {
@@ -1543,16 +1544,6 @@ aside .categories ul {
 @media screen and (max-width: 768px) {
   .aesthetic-section {
     grid-template-columns: 1fr;
-  }
-  .aesthetic-section i {
-    display: none;
-  }
-  .over .overlay {
-    opacity: 1;
-    background-color: rgba(0, 0, 0, 0.8);
-  }
-  .over .overlay a:hover {
-    transform: none;
   }
   .item-1 {
     order: 2;

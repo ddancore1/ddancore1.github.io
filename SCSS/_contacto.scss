@@ -48,8 +48,11 @@
   align-items: center;
   overflow: hidden; 
   box-shadow: 0 -5px 15px rgba(48, 70, 51, 0.4);
+  background-image: url(../img/bosque-medio.png);
+  background-size: cover;
+  background-attachment: fixed;
 
-  &::before {
+   &::before {
       content: "";
       position: absolute;
       top: 0;
@@ -58,11 +61,8 @@
       height: 100%;
       background-color: rgba(0, 0, 0, 0.5); 
       z-index: 1; 
-  }
+    }
 
-  background-image: url(../img/bosque-medio.png);
-  background-size: cover;
-  background-attachment: fixed;
 }
 
 .container-form {

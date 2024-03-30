@@ -287,6 +287,11 @@
 
 }
 @media only screen and (min-width: 769px){
+    
+    .banner{
+        background-attachment: fixed;
+    }
+
     .informacion a:hover{
         transform: scale(1.1);
     }
@@ -453,7 +458,43 @@
 }
 
 
+// Novedades
 
+@media screen and (max-width: 768px) {
+    .aesthetic-section {
+        grid-template-columns: 1fr; 
+        i {
+         display: none;
+        }
+    }
+    
+  
+    .over .overlay {
+        opacity: 1;
+        background-color: rgba(0, 0, 0, 0.8);
+        
+        a:hover{
+         transform: none;
+        }
+
+        
+        
+    }
+
+    .item-1{
+        order: 2;
+    }
+
+    .item-2{
+        grid-column: span 1;
+    }
+
+    .item-3{
+        order: 3;
+    }
+
+    
+}
 
 
 // NOSOTROS:
@@ -477,6 +518,14 @@
         order: 1;
     }
     
+}
+
+@media only screen and (min-width: 769px){
+    
+    .banner1{
+        background-attachment: fixed;
+    }
+
 }
 
 

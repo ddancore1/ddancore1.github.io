@@ -366,22 +366,26 @@ h2 {
 .banner {
   width: 100%;
   height: 50rem;
-  background-size: 100% 100%;
   position: relative;
   display: grid;
   justify-content: left;
   align-items: center;
   background-image: url(../img/bosque-otoñal.webp);
+  background-position: center center;
+  background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
-.banner .capa {
-  width: 100%;
-  height: 100%;
+
+.banner::before {
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
 }
 
 .informacion {
@@ -605,7 +609,6 @@ h2 {
 }
 
 .venta-card {
-  border: 1px solid #ddd;
   border-radius: 8px;
   padding: 20px;
   margin: 10px;
@@ -613,9 +616,10 @@ h2 {
   width: calc(30% - 20px);
   cursor: pointer;
   transition: transform 0.3s;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 .venta-card:hover {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
   transform: scale(1.05);
 }
 .venta-card img {
@@ -719,37 +723,117 @@ aside .categories ul {
   align-items: center;
   background-color: #f0f0f0;
   border-radius: 10px;
+  font-size: 2re;
+}
+
+.over {
+  overflow: hidden;
+  position: relative;
+}
+.over i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  width: 6rem;
+  height: 6rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: rgba(255, 241, 223, 0.3);
+  border-radius: 100px;
+  position: absolute;
+  z-index: 1;
+}
+.over .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.over:hover .overlay {
+  opacity: 1;
+}
+.over:hover i {
+  opacity: 0;
+}
+.over h2 {
+  color: #fff;
   font-size: 2rem;
-  color: #333;
+  margin-bottom: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.over a {
+  padding: 5vh 5vh;
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 40px;
+  border: 2px solid #c7bbad;
+  border-radius: 5rem;
+  color: #fff1df;
+  text-decoration: none;
+  background: #0d0f10;
+  font-size: medium;
+}
+.over a:hover {
+  background: #282d2c;
+  transform: scale(1.1);
 }
 
 .item-1 {
-  background-color: #a3b18a;
   grid-column: span 1;
+  overflow: hidden;
+}
+.item-1 iframe {
+  width: 100%;
+  height: 100%;
 }
 
 .item-2 {
-  background-color: #7e9971;
   grid-column: span 2;
+  background-image: url("../img/articulo-tendencias.jpeg");
+  background-size: 80% auto;
+  background-position: top;
 }
 
 .item-3 {
-  background-color: #5c7a59;
   grid-column: span 1;
+  background-image: url("../img/articulo-lectura.jpeg");
+  background-size: cover;
+  background-position: center;
 }
 
 .item-4 {
-  background-color: #3a5a40;
   grid-column: span 1;
+  overflow: hidden;
+}
+.item-4 iframe {
+  width: 100%;
+  height: 100%;
 }
 
 .item-5 {
-  background-color: #375441;
   grid-column: span 1;
+  background-image: url("../img/articulo-clasicos.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 40px;
+  height: 40px;
 }
 
 .carousel-item img {
-  height: 300px;
+  height: 400px;
   object-fit: cover;
 }
 
@@ -771,22 +855,12 @@ aside .categories ul {
 .banner1 {
   width: 100%;
   height: 40rem;
-  background-size: 100% 100%;
-  position: relative;
-  display: grid;
-  justify-content: center;
-  align-items: center;
   background-image: url(../img/joven-mujer-libro.webp);
+  background-position: center center;
+  background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
-}
-.banner1 .capa1 {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.6);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  filter: brightness(50%);
 }
 
 .general {
@@ -1021,7 +1095,7 @@ aside .categories ul {
   text-align: center;
   padding: 40px;
 }
-.autores-section h2 {
+.autores-section h1 {
   color: #0D0F10;
   font-size: 30px;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
@@ -1035,27 +1109,30 @@ aside .categories ul {
 }
 
 .autor-card {
-  border: 1px solid #ddd;
   border-radius: 8px;
   padding: 20px;
   margin: 10px;
   width: calc(33.33% - 20px);
   cursor: pointer;
   transition: transform 0.3s;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 .autor-card:hover {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
   transform: scale(1.05);
 }
 .autor-card img {
   width: 100%;
   border-radius: 6px;
 }
-.autor-card h3 {
+.autor-card h2 {
+  font-size: 2rem;
   margin-top: 10px;
   color: #333;
 }
 .autor-card p {
+  margin-top: 10px;
+  font-size: 1.5rem;
   color: #666;
 }
 
@@ -1346,6 +1423,9 @@ aside .categories ul {
   }
 }
 @media only screen and (min-width: 769px) {
+  .banner {
+    background-attachment: fixed;
+  }
   .informacion a:hover {
     transform: scale(1.1);
   }
@@ -1461,6 +1541,30 @@ aside .categories ul {
   }
 }
 @media screen and (max-width: 768px) {
+  .aesthetic-section {
+    grid-template-columns: 1fr;
+  }
+  .aesthetic-section i {
+    display: none;
+  }
+  .over .overlay {
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  .over .overlay a:hover {
+    transform: none;
+  }
+  .item-1 {
+    order: 2;
+  }
+  .item-2 {
+    grid-column: span 1;
+  }
+  .item-3 {
+    order: 3;
+  }
+}
+@media screen and (max-width: 768px) {
   .banner1 {
     background-position: 30% 50%;
   }
@@ -1474,6 +1578,11 @@ aside .categories ul {
   }
   .general-3 {
     order: 1;
+  }
+}
+@media only screen and (min-width: 769px) {
+  .banner1 {
+    background-attachment: fixed;
   }
 }
 @media (max-width: 768px) {
